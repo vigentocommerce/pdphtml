@@ -3,6 +3,7 @@ a{transition: all 0.3s ease-out 0s; color:#00baf7;}
 a:hover{color:#F75352; text-decoration:none;}
 img{max-width:100%;}
 ol, ul{list-style:none; margin:0; padding:0;}
+.bkg-grey{background:#eee;}
 .pdp-btn{
 	background-color: #79be37;
 	border-color: #79be37;
@@ -34,7 +35,6 @@ ol, ul{list-style:none; margin:0; padding:0;}
 .pdp-container{padding:0 30px;}
 /*		Toplinks		*/
 .pdp-toplinks{
-	background: #eeeeee none repeat scroll 0 0;
 	padding: 5px 0;
 }
 .pdp-toplinks li{
@@ -103,7 +103,7 @@ ol, ul{list-style:none; margin:0; padding:0;}
 	height:auto;
 	padding:40px 0;
 }
-.home-banner .banner-content{float:none;}
+.home-banner .banner-content{float:none; max-width: 625px;}
 .banner-content h1{
 	font-size: 48px;
 	font-weight: 300;
@@ -157,7 +157,34 @@ ol, ul{list-style:none; margin:0; padding:0;}
 .home-feature-list ul li h4{font-size:19px; font-weight: 400;}
 .home-feature-list ul li h4 a{}
 .home-feature-list ul li h4 a:hover{}
+/*	Section 4		*/
+.home-feature-hight .home-feature-top h2{margin-bottom:20px;}
+.h-feature-card {color:#303442; font-size:16px; background:#fff; padding:10px;}
+.home-feature-hight li > div{transition: all 0.3s ease-out 0s;}
+.home-feature-hight li > div:hover{box-shadow:0 20px 40px 0 rgba(0, 0, 0, 0.22);}
+.h-feature-card h5{
+	color: #656565;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin: 20px 0 10px;
+	font-size:15px;
+}
+.h-feature-card span{color:#00baf7; text-transform:uppercase; font-size:15px;}
+.home-feature.home-feature-hight .explore-btn{margin-top:60px;}
 
+/*	Section 5		*/
+.f-icon{font-family:fontawesome;}
+.home-feature-content .f-icon{
+	display:block;
+	margin:0 0 25px 0;
+	clear:both;
+	font-size:32px;
+}
+.f-icon1{content:"\f118"; color:#9B94D9;}
+.f-icon2{content:"\f003"; color:#28BBF8;}
+.f-icon3{content:"\f022"; color:#F1C40F;}
+.f-icon4{content:"\f09d"; color:#94CB5F;}
+.f-icon5{content:"\f085"; color:#E86D51;}
 /*		Footer		*/
 /*	Footer top		*/
 .pdp-footer{color:#656565;}
@@ -221,7 +248,6 @@ ol, ul{list-style:none; margin:0; padding:0;}
 .subscribe-form button{border:none; margin: 20px 0 0;}
 /*	Footer bottom		*/
 .pdp-footer-bottom{
-	background: #eeeeee none repeat scroll 0 0;
 	padding: 30px 0;
 }
 .pdp-footer-bottom .copy-right{}
