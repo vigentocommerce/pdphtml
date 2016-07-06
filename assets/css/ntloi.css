@@ -49,9 +49,10 @@ ol, ul{list-style:none; margin:0; padding:0;}
 .pdp-toplinks li a:hover{color:#F75352;}
 /*		Header		*/
 .pdp-header.stickytop {
-    position:fixed;
-    top:0;
-	z-index:1000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 .pdp-header{padding: 20px 0;
 	background-color: #ffffff;
@@ -95,14 +96,14 @@ ol, ul{list-style:none; margin:0; padding:0;}
 }
 /*		Main		*/
 /*	Home banner		*/
-.home-banner{
-	background-image: url("../images/home-banner.jpg");
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	height:auto;
-	padding:40px 0;
-}
+/* .home-banner {
+  background-image: url("../images/home-banner-01.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  padding: 135px 0;
+} */
 .home-banner .banner-content{float:none; max-width: 625px;}
 .banner-content h1{
 	font-size: 48px;
