@@ -6,12 +6,14 @@
 <link rel="stylesheet" href="assets/font-awesome-4.4.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="assets/css/ntloi.css">
 <link rel="stylesheet" type="text/css"  href="assets/css/responsive.css" />
-<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900&subset=latin,greek,latin-ext,greek-ext,cyrillic,vietnamese,cyrillic-ext' rel='stylesheet' type='text/css'>
+
+
 <!-- JS -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/js/custom.js"></script>
 <script src="assets/js/vivus.min.js"></script>
+
 <body>
 <div id="pdpwrapper" class="pdp-wrapper">
 	<div class="">
@@ -31,13 +33,25 @@
 						<a href="#" class="logo"><img src="assets/images/logo.svg" alt="logo" height="35px" /></a>
 					</div>
 					<div class="col-lg-9 col-xs-12 col-sm-12 col-md-9 text-right">
-						<ul class="header-nav">
+						<ul class="header-nav hidden-xs">
 							<li><a href="#">Way to sell</a></li>
 							<li><a href="#">Feature</a></li>
 							<li><a href="#">Pricing</a></li>
 							<li><a href="#">Service</a></li>
 							<li><a href="#">More +</a></li>
 						</ul>
+						<div class="visible-xs header-nav header-nav-mobile">
+							<a class="menu-left-responsive"><i class="fa fa-bars" aria-hidden="true"></i>Menu</a>
+							<div class="menu-left-container">
+								<ul>
+									<li><a href="#">Way to sell</a></li>
+									<li><a href="#">Feature</a></li>
+									<li><a href="#">Pricing</a></li>
+									<li><a href="#">Service</a></li>
+									<li><a href="#">More +</a></li>
+								</ul>
+							</div>							
+						</div>
 						<a href="#" class="pdp-btn2 pdp-btn-demo"><span>Start my demo</span></a>
 					</div>
 				</div>
@@ -83,23 +97,23 @@
 						<h3 class="title">PDP helps your bussiness:</h3>
 						<ul>
 							<li class="item1">
-								<h4><a href="#">Expanding Your Business Online</a></h4>
+								<h4><i class="fa fa-user-plus" aria-hidden="true"></i><a href="#">Expanding Your Business Online</a></h4>
 								<p>Open a print-on-demand without a printer. Why not?</p>
 							</li>
 							<li class="item2">
-								<h4><a href="#">Smart Integration</a></h4>
+								<h4><i class="fa fa-line-chart" aria-hidden="true"></i><a href="#">Smart Integration</a></h4>
 								<p>Full integration, operate independently and Easily install, setup, upgrade PDP without effect to live store.</p>
 							</li>
 							<li class="item3">
-								<h4><a href="#">Separate Dashboard with Sales report</a></h4>
+								<h4><i class="fa fa-bar-chart" aria-hidden="true"></i><a href="#">Separate Dashboard with Sales report</a></h4>
 								<p>A very simple and clean Dashboard with all management sections.</p>
 							</li>
 							<li class="item4">
-								<h4><a href="#">High Quality Source Code</a></h4>
+								<h4><i class="fa fa-cog" aria-hidden="true"></i><a href="#">High Quality Source Code</a></h4>
 								<p>.</p>
 							</li>
 							<li class="item5">
-								<h4><a href="#">Mo rong nganh nge kinh doanh</a></h4>
+								<h4><i class="fa fa-users" aria-hidden="true"></i><a href="#">Mo rong nganh nge kinh doanh</a></h4>
 								<p>San sang cho xu huong kinh doanh moi, khi moi thu deu co the ca nhan hoa.</p>
 							</li>
 						</ul>
@@ -172,7 +186,7 @@
 				<div class="row">
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 f-special-bg">
 						<div class="container">
-							<h1 class="f-icon f-icon1">120K+</h1>
+							<h1 class="f-icon f-icon1"><i class="fa fa-smile-o" aria-hidden="true"></i>120K+</h1>
 							<p>Users on board</p>
 						</div>
 					</div>
@@ -180,19 +194,19 @@
 						<div class="container-fluid">
 							<ul class="row">
 								<li class="col-lg-6 col-xs-12 col-md-6 col-sm-6">
-									<h2 class="f-icon f-icon2">29B</h2>
+									<h2 class="f-icon f-icon2"><i class="fa fa-envelope-o" aria-hidden="true"></i>29B</h2>
 									<p>Emails delivered</p>
 								</li>
 								<li class="col-lg-6 col-xs-12 col-md-6 col-sm-6">
-									<h2 class="f-icon f-icon3">396M</h2>
+									<h2 class="f-icon f-icon3"><i class="fa fa-list-alt" aria-hidden="true"></i>396M</h2>
 									<p>Contacts Managed</p>
 								</li>
 								<li class="col-lg-6 col-xs-12 col-md-6 col-sm-6">
-									<h2 class="f-icon f-icon4">$3.4B</h2>
+									<h2 class="f-icon f-icon4"><i class="fa fa-credit-card" aria-hidden="true"></i>$3.4B</h2>
 									<p>Payments processed</p>
 								</li>
 								<li class="col-lg-6 col-xs-12 col-md-6 col-sm-6">								
-									<h2 class="f-icon f-icon5">450K</h2>
+									<h2 class="f-icon f-icon5"><i class="fa fa-cogs" aria-hidden="true"></i>450K</h2>
 									<p>Campaigns Run</p>
 								</li>
 							</ul>
@@ -202,7 +216,7 @@
 			</div>
 		</section>
 		<!-- Section 6  -->
-		<section class="home-service">
+		<!-- <section class="home-service">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="container">
@@ -217,7 +231,7 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<!-- Section 7  -->
 		<section class="home-contact text-center">
 			<div class="pdp-contact-top text-center pdp-container">
@@ -226,12 +240,12 @@
 			<div class="home-contact-request container-fluid">
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 bkg-border">
-							<h3 class="f-icon f-icon-phone">Talk to a human</h3>
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 bkg-border">
+							<h3 class="f-icon f-icon-phone"><i class="fa fa-phone" aria-hidden="true"></i>Talk to a human</h3>
 							<a id="demo_call" class="pdp-btn2" href="tel:18668000004">+1 866 800 0004</a>
 						</div>
-						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-							<h3 class="f-icon f-icon-chat">Start a live chat</h3>
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+							<h3 class="f-icon f-icon-chat"><i class="fa fa-weixin" aria-hidden="true"></i>Start a live chat</h3>
 							<a class="pdp-btn2" onclick="liveagent.startChat('573j0000000fxSr')" style="" href="#">Sales Chat</a>
 						</div>
 					</div>
@@ -245,18 +259,18 @@
 			<div class="pdp-footer-top">
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-4 col-sm-12">
+						<div class="col-lg-4 col-md-6 col-sm-6">
 							<a class="small-logo" href="#"><img src="assets/images/logo.svg" alt="logo" /></a>
 							<ul class="f-address">								
-								<li class="map-icon">1260 South Spectrum Boulevard<br>Chandler, Arizona 85286</li>
-								<li class="phone-icon">Americas: <a href="tel:18668000004">+1 866 800 0004</a></li>
-								<li class="phone-icon">Americas (local): <a href="tel:14804996500">+1 480 499 6500</a></li>         
+								<li class="map-icon"><i class="fa fa-map" aria-hidden="true"></i>1260 South Spectrum Boulevard<br>Chandler, Arizona 85286</li>
+								<li class="phone-icon"><i class="fa fa-phone" aria-hidden="true"></i>Americas: <a href="tel:18668000004">+1 866 800 0004</a></li>
+								<li class="phone-icon"><i class="fa fa-phone" aria-hidden="true"></i>Americas (local): <a href="tel:14804996500">+1 480 499 6500</a></li>         
 							</ul>
 						</div>
-						<div class="col-lg-4 col-sm-12">						
+						<div class="col-lg-4 col-md-6 col-sm-6">						
 							<div class="top-row">
 								<div class="row">
-									<div class="col-lg-6 col-xs-12">
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 										<div class="f-title">
 											<h5>Engage</h5>
 										</div>
@@ -267,7 +281,7 @@
 											<li><a href="#">Find a Partner</a></li>
 										</ul>
 									</div>
-									<div class="col-lg-6 col-xs-12">
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 										<div class="f-title">
 											<h5>Support</h5>
 										</div>
@@ -289,14 +303,14 @@
 								</div>
 							</div>       
 						</div>
-						<div class="col-lg-4 col-sm-12">
+						<div class="col-lg-4 col-md-6 col-sm-6">
 							<div class="f-title">
 								<h5>Sign up for our mailing list</h5>							
 							</div>
 							<form action="#" method="post" class="subscribe-form">
 								<p>Email:</p>
-								<input type="email" name="email" class="subscribe-input form-control" placeholder="Email address" autofocus>
-								<button type="submit" class="subscribe-submit pdp-btn">Submit</button>
+								<input type="email" name="email" class="subscribe-input form-control" placeholder="Email address">
+								<button type="submit" class="subscribe-submit pdp-btn">Sign Up</button>
 							</form>
 						</div>
 					</div>
@@ -314,11 +328,11 @@
 						</div>
 						<div class="col-lg-6 col-md-6 col-sm-12 text-right">
 							<ul class="f-socials">
-								<li><a href="#" class="facebook">Facebook</a></li>
-								<li><a href="#" class="twitter">Twitter</a></li>
-								<li><a href="#" class="instagram">Instagram</a></li>
-								<li><a href="#" class="linkedin">linkedin</a></li>
-								<li><a href="#" class="youtube">youtube</a></li>
+								<li><a href="#" class="facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i>Facebook</a></li>
+								<li><a href="#" class="twitter"><i class="fa fa-twitter-square" aria-hidden="true"></i>Twitter</a></li>
+								<li><a href="#" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
+								<li><a href="#" class="linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i>linkedin</a></li>
+								<li><a href="#" class="youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i>youtube</a></li>
 							</ul>
 						</div>
 					</div>
