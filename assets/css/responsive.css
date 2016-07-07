@@ -8,6 +8,7 @@
 @media (max-width: 480px){  }
 @media (min-width: 481px) and (max-width: 639px) {}
 @media (max-width: 767px){ 
+	.subcribe-block{margin:35px 0 0 0;}
 	.home-feature-special .home-feature-content li{
 		border-right:none;
 	}
