@@ -24,6 +24,8 @@ ol, ul{list-style:none; margin:0; padding:0;}
     letter-spacing: 1.08px;
     padding: 10px 25px;
 	border-radius:3px;
+	border:none;
+	transition: all 0.3s ease-out 0s;
 }
 .pdp-btn:hover, .pdp-btn:active, .pdp-btn:focus {
 	  background-color: #81c73d;
@@ -40,11 +42,15 @@ ol, ul{list-style:none; margin:0; padding:0;}
     padding: 10px 25px;
 	 display:inline-block;
 	 color:#fff;
+	 transition: all 0.3s ease-out 0s;
 }
 .pdp-btn2:hover, .pdp-btn2:active, .pdp-btn2:focus {
 	background-color:#fff;
 	color:#79be37;
 }
+.margin-bottom-15{margin-bottom:15px;}
+.margin-bottom-20{margin-bottom:20px;}
+.margin-bottom-70{margin-bottom:70px;}
 #pdpwrapper{}
 .pdp-wrapper{}
 .pdp-container{padding:0 30px;}
@@ -62,7 +68,7 @@ ol, ul{list-style:none; margin:0; padding:0;}
 	line-height: 30px;
 }
 .pdp-toplinks li a:hover{color:#F75352;}
-/*		Header		*/
+/*		HEADER		*/
 .pdp-header.stickytop {
   position: fixed;
   top: 0;
@@ -246,11 +252,9 @@ ol, ul{list-style:none; margin:0; padding:0;}
 .menu-sidebar-container .collapsed.nav-list:after{
   transform: rotate(90deg);
 }
-.menu-sidebar-container .collapsed.nav-list{
-	
-}
 
-/*		Main		*/
+
+/*		MAIN		*/
 /*	Home banner		*/
 
 /* .home-banner{
@@ -494,10 +498,139 @@ ol, ul{list-style:none; margin:0; padding:0;}
 
 }
 
+/*		LOGIN PAGE		*/
+.page-title {
+	text-align: center;
+	margin: 0 0 45px;
+}
+.page-title > h1 {
+	font-size: 35px;
+    font-weight: 300;
+    line-height: 45px;
+    margin-bottom: 60px;
+    position: relative;
+    text-transform: uppercase
+}
+.page-title > h1:after {
+	background: #303442;
+	bottom: -25px;
+	content: "";
+	height: 2px;
+	left: 50%;
+	margin-left: -15px;
+	position: absolute;
+	width: 30px;
+}
+.page-title > p {
+  font-size: 16px;
+  margin: 0 auto;
+  max-width: 80%;
+}
+.account-login {
+	margin: 0 auto;
+	max-width: 85%;
+	padding:25px 0;
+}	
+.account-login .form-block {min-height:590px;}
+.form-block {
+  background: #ffffff none repeat scroll 0 0;
+  border-top: medium none !important;
+  margin: 0 auto;
+  padding: 40px 65px;;
+}
+.login-container{
+	border-radius: 5px;
+	display: block;
+	overflow: hidden;
+}
+.input-group {
+  border-collapse: separate;
+  display: table;
+  position: relative;
+}	
+.new-users {
+  background: #69c4c7 none repeat scroll 0 0;
+}					*/
+.new-users h2 {
+  color: #ffffff;
+}
+.form-block .input-group-addon {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  padding-right: 0;
+}
+.input-group-addon:first-child {
+  border-right: 0 none;
+}
+.form-block .input-group input.form-control {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border-left: medium none;
+}
+.new-users .input-group-addon {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border-color: rgba(255, 255, 255, 0.7);
+  color: #ffffff;
+}
+.new-users .input-group input.form-control {
+  border-color: rgba(255, 255, 255, 0.7);
+  border-left: medium none;
+  color: #ffffff;
+}
 
-/*		Footer		*/
+.new-users input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+     color: fff;
+}
+.new-users input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+     color: fff;
+}
+.new-users input::-moz-placeholder { /* Mozilla Firefox 19+ */
+     color: fff;
+}
+.new-users input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: fff;
+}
+.customer-account-login{background:#eee;}
+.form-control{height:45px; line-height:45px;}
+.account-login .pdp-btn i{margin: 0 8px 0 0;}
+.account-login .pdp-btn{
+	letter-spacing: 0;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-transform: uppercase;
+    width: 100%;
+}
+.btn-twitter{color:#fff; background-color:#3693C3!important;}
+.btn-facebook{color:#fff; background-color:#2D4682!important;}
+.new-users .social-login {
+  border-top: 1px solid #ffffff;
+  padding-top: 70px;
+  position: relative;
+}
+.new-users .or {
+    background: #69c4c7 none repeat scroll 0 0;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    height: 70px;
+    left: 50%;
+    line-height: 70px;
+    margin-left: -35px;
+    padding: 0 24px;
+    position: absolute;
+    text-transform: uppercase;
+    top: -35px;
+    width: 70px;
+    z-index: 1;
+}
+.rounded-x {
+    border-radius: 50% !important;
+}
+.registered-users .checkbox label {
+  display:block;
+  margin:0 0 15px 0;
+}
+
+/*		FOOTER		*/
 /*	Footer top		*/
-.pdp-footer{color:#656565;}
+.pdp-footer{color:#656565; background:#fff;}
 .pdp-footer-top{ padding: 40px 0; }
 .pdp-footer a{ color:#656565;}
 .pdp-footer a:hover{ color:#f75352;}

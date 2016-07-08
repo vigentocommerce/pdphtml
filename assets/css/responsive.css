@@ -16,6 +16,9 @@
 	.home-banner {
 	  padding: 30px 0 0;
 	}
+	.form-block {
+	  padding: 30px 40px;
+	}
 
 }
 @media (min-width: 768px) and (max-width: 960px) {
@@ -48,6 +51,10 @@
 		height:auto;
 		padding:90px 0;
 	} */
+	
+	.form-block {
+	  padding: 0 20px;
+	}
 	.pdp-header{padding-bottom:0; }
 	.header-nav li a.menu-sidebar-right{padding:0 10px;}
 	.subcribe-block{margin:35px 0 0 0;}
@@ -116,7 +123,11 @@
 	  padding: 15px 20px;
 	}
 }
-@media (max-width: 480px){  }
+@media (max-width: 480px){
+	.page-title > h1 {
+	  font-size: 30px;
+	} 
+}
 @media (max-width: 360px){ 
 	.home-banner > img{display:none;}
 	.home-banner .banner-content {
