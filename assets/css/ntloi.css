@@ -57,6 +57,7 @@ ol, ul{list-style:none; margin:0; padding:0;}
 /*		Toplinks		*/
 .pdp-toplinks{
 	padding: 5px 0;
+	margin-bottom: 82px;
 }
 .pdp-toplinks li{
 	display: inline-block;
@@ -70,19 +71,17 @@ ol, ul{list-style:none; margin:0; padding:0;}
 .pdp-toplinks li a:hover{color:#F75352;}
 /*		HEADER		*/
 .pdp-header.stickytop {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
+  margin-top:-122px;
+  
 }
 .pdp-header{padding: 20px 0;
 	background-color: #ffffff;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-
-	-webkit-transition: all 2s; 
-    -moz-transition: all 2s; 
-    -o-transition: all 2s; 
-    transition: all 2s;
+	  width: 100%;
+	  z-index: 1000;
+	  transition: all 0.3s cubic-bezier(0.5, 1, 0.7, 1) 0s;
+	  position:fixed;
+	  margin-top: -82px;
 }
 .pdp-header .logo{}
 .header-nav{display: inline-block; transition: all 0.3s ease-out 0s;}
@@ -213,14 +212,17 @@ ol, ul{list-style:none; margin:0; padding:0;}
 }
 .menu-sidebar-top {margin:20px 0;}
 .menu-sidebar-top .pdp-btn-demo{
-	display:inline-block;
-	padding:5px 25px;
-	background-color:#78be37;
-	color:#fff;
+	background-color: #ffffff;
+	color: #78be37;
+	display: inline-block;
+	font-weight: normal;
+	padding: 5px 25px;
+	text-transform: capitalize;
 }
+.menu-sidebar-top .pdp-btn-demo:hover{background:#78be37; color:#fff;}
 .header-nav-sidebar li{display:block; padding:0 0 0 25px;}
-.header-nav-sidebar li a{}
-.header-nav-sidebar li li a{text-transform:capitalize; color:rgba(255, 255, 255, 0.55);}
+.menu-sidebar-container li a{padding:0 30px;}
+.header-nav-sidebar li li a{text-transform:capitalize; color:rgba(255, 255, 255, 0.55); padding:0 20px;}
 .menu-sidebar-container > ul{height: 260px;    overflow-y: scroll;}
 
 .menu-sidebar-container .nav-list{position:relative; }

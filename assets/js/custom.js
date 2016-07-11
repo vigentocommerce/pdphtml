@@ -1,7 +1,7 @@
 var mst = jQuery.noConflict();	
 	mst(function(){
 		mst(window).scroll(function() {
-			if (mst(this).scrollTop() >= 100) {
+			if (mst(this).scrollTop() >= 82) {
 				mst('.pdp-header').addClass('stickytop');
 				mst('.pdp-btn-demo').addClass('over');
 				/* mst('.header-nav').css('opacity', '0');
@@ -9,11 +9,13 @@ var mst = jQuery.noConflict();
 					mst('.header-nav').css('opacity', '1');
 					}, function(){
 				});	 */
+				
 			}
 			else {
 				mst('.pdp-header').removeClass('stickytop');
 				/* mst('.header-nav').css('opacity', '1'); */
 				mst('.pdp-btn-demo').removeClass('over');
+
 			}
 		});
 	});
