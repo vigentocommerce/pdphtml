@@ -143,6 +143,13 @@
 	  line-height: 40px;
 	}
 	.banner-content .pdp-btn{text-align:center;}
+	.alert-recent-update {
+	  height: 55px;
+	  line-height: normal;
+	}
+	.alert-recent-update .icon{float:left; margin-top:0;}
+	.alert-recent-update .alert-content{display:table; padding: 10px 5px 0;}
+	.alert-recent-update .icon i{line-height:50px;}
  }
 @media (max-width: 320px){ 
 	.pdp-toplinks li {
