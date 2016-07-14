@@ -1,6 +1,10 @@
 @media (min-width:1280px) and (max-width:1900px){}
 @media (max-width: 1200px){}
-@media (min-width: 1200px){}
+@media (min-width: 1200px){
+	.partner-section-top{
+		max-width:920px;
+	}
+}
 @media (min-width: 1200px) and (max-width: 1290px) {
 	.home-banner .banner-content {
 		top: 45px;
@@ -23,6 +27,9 @@
 	  padding: 30px 40px;
 	}
 	.menu-sidebar-container li a{padding:0 30px;}
+	.feature-content-right .feature-content-block {
+	  margin:-25px 0 0 3%
+	}
 }
 @media (min-width: 768px) and (max-width: 960px) {	
 	.header-nav li a {
@@ -44,6 +51,9 @@
 	  max-width: 590px;
 	  top:20px;
 	}
+	.feature-content-right .feature-content-block {
+	  margin:-25px 0 0 3%
+	}
 }
 @media (max-width: 767px){ 
 	/* .home-banner > img{display:none;}
@@ -55,7 +65,14 @@
 		height:auto;
 		padding:90px 0;
 	} */
-	
+	.feature-content-right .feature-content-block {
+	  margin: 20px 0 0;
+	  max-width: 100%;
+	  padding: 0 20px;
+	}
+	.feature-content-right .feature-img-block {
+	  width: 100%;
+	}
 	.form-block {
 	  padding: 0 20px;
 	}
@@ -94,7 +111,6 @@
 
 	}
 	.pdp-header .logo {
-	  display: inline-block;
 	  margin: 0 0 20px;
 	}
 	.pdp-footer-bottom .copy-right {
@@ -131,6 +147,17 @@
 	.page-title > h1 {
 	  font-size: 30px;
 	} 
+	.popout-box .title {
+	  font-size: 24px;;
+	}
+	.feature-banner .popout-box {
+	  max-width: 270px;
+	  padding: 0 20px 20px;
+	}
+	.feature-banner .pdp-btn2 {
+	  letter-spacing: 1px;
+	  padding: 10px;
+	}
 }
 @media (max-width: 360px){ 
 	.home-banner > img{display:none;}
