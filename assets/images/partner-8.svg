@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="146px" height="99px" viewBox="0 0 146 99" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="v2" transform="translate(-1077.000000, -4071.000000)" stroke-width="2" stroke="#535353">
+            <g id="content_mask" transform="translate(-1.000000, 0.000000)">
+                <g id="content">
+                    <g id="already_a_partner" transform="translate(81.000000, 3264.000000)">
+                        <g id="marketplace" transform="translate(867.000000, 774.000000)">
+                            <g id="USBcable" transform="translate(131.000000, 34.000000)">
+                                <rect id="Rectangle-523" fill="#E1F5FF" x="32" y="48.8378378" width="48" height="48.1621622"></rect>
+                                <path d="M133.333333,22.0810811 L122.666667,22.0810811 C116.775629,22.0810811 112,17.2772903 112,11.3783784 L112,11.3783784 C112,5.46743889 116.787616,0.675675676 122.666667,0.675675676 L133.333333,0.675675676 L133.333333,22.0810811 L133.333333,22.0810811 Z" id="Rectangle-523"></path>
+                                <rect id="Rectangle-524" x="0" y="51.5135135" width="24" height="16.0540541"></rect>
+                                <rect id="Rectangle-525" x="0" y="78.2702703" width="24" height="16.0540541"></rect>
+                                <path d="M13.3333333,59.5405405 L10.6666667,59.5405405" id="Line" stroke-linecap="square"></path>
+                                <path d="M13.3333333,86.2972973 L10.6666667,86.2972973" id="Line" stroke-linecap="square"></path>
+                                <path d="M122.666667,72.9189189 C134.448741,72.9189189 144,63.9343629 144,52.8513514 C144,41.7683398 134.448741,32.7837838 122.666667,32.7837838" id="Oval-533"></path>
+                                <path d="M80,11.3783784 C74.1089627,11.3783784 69.3333333,16.1701416 69.3333333,22.0810811 C69.3333333,27.9920206 74.1089627,32.7837838 80,32.7837838" id="Oval-533"></path>
+                                <path d="M81.3333333,72.9189189 L120,72.9189189" id="Line" stroke-linecap="square"></path>
+                                <path d="M82.6666667,32.7837838 L120,32.7837838" id="Line" stroke-linecap="square"></path>
+                                <path d="M82.6666667,11.3783784 L109.333333,11.3783784" id="Line" stroke-linecap="square"></path>
+                                <rect id="Rectangle-527" x="133.333333" y="6.02702703" width="10.6666667" height="10.7027027"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
