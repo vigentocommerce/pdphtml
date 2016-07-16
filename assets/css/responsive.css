@@ -78,6 +78,7 @@
 		height:auto;
 		padding:90px 0;
 	} */
+	h2{font-size:24px;}
 	.top-nav-partner li a {	  padding: 8px;	}
 	.top-nav-partner > li {	  margin: 15px 0 20px 10px;	}
 	.feature-content-right .feature-content-block {
@@ -142,6 +143,12 @@
 	  margin-top: 5px;
 	  padding-top: 5px;
 	}
+	.pricing-top h2::before, .pricing-top h2::after {
+	  width: 45%;
+	}
+	.pricing-tab-3 .pricing-content li {
+	  text-align:center;
+	}
 }
 @media (min-width: 480px) and (max-width: 640px) {
 	.home-banner .banner-content {	  top: 0;	}
@@ -178,6 +185,9 @@
 }
 }
 @media (max-width: 360px){ 
+	.pricing-top h2::before, .pricing-top h2::after {
+	  width: 35px;
+	}
 	.home-banner > img{display:none;}
 	.home-banner .banner-content {
 	  position: relative;
