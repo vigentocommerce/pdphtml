@@ -1363,17 +1363,17 @@ ol, ul{list-style:none; margin:0; padding:0;}
   visibility: hidden;
 }
 .pricing-tab-3 .pdp-btn {
-  -moz-border-bottom-colors: none;
-  -moz-border-left-colors: none;
-  -moz-border-right-colors: none;
-  -moz-border-top-colors: none;
-  border-color: #fff #fff -moz-use-text-color;
-  border-image: none;
-  border-style: solid solid none;
-  border-width: 1px 1px medium;
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	border-color: -moz-use-text-color;
+	border-image: none;
+	border-style: none solid none none;
+	border-width: medium 1px medium medium;
 
 }
-
+.pricing-tab-3 .block:last-child .pdp-btn {border-right:none;}
 
 
 /*		FOOTER		*/
