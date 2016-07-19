@@ -1,0 +1,32 @@
+<!-- home.html -->
+	<!--h1>Home Page</h1>
+	<p>{{ message }}</p-->
+	<div class="book-page ng-scope" id="page-content-wrapper">
+    <!-- ngInclude: views.book_content -->
+		<div class="container-fluid ng-scope" id="book-wrapper">            
+			<div class="reader-container col-sm-12 col-lg-offset-1 col-lg-10 col-xl-offset-2 col-xl-8 ng-scope">
+
+				<div class="row">
+					<div  class="book-content">
+						<div class="titlepage"><div><div><h2 class="title"><a id="pref05"></a>Preface</h2></div></div></div>
+						<p>Many web development frameworks for single-page applications have come out over the years. AngularJS is not just another one of them though; it is different in important ways. Most importantly, it brings the fun back to client-side development.</p><p>How is AngularJS different? It is declarative, meaning that we, as developers, do not have to manually manipulate the document object model (DOM) in the browser. Instead, we describe how the data model is supposed to be rendered on a page, and then, let AngularJS handle the rendering on the page when the data model changes.</p><p>Through the two-way data binding, the data model updates automatically, for example, when we type text on a page or click on a button. Other UI elements that are also bound to the model will update. This might not sound like much before seeing it in action, but it indeed makes all the difference between massive amounts of jQuery DOM-manipulating code and a clean description of how the current application state is supposed to look on the page. In practice, this results in much cleaner and shorter code.</p><p>JavaScript is a very powerful language. It has it...</p>						                      
+						<div class="fade-out"></div>                        
+					</div>
+				</div>
+
+				<div ng-show="next_section.show" class="row ns">
+					<hr>
+						<span class="hidden-xs" ng-show="entitled == true"><h4 class="pull-left ng-binding"><strong>Up Next: </strong> 1: Setting Up the Environment</h4><a class="btn btn-primary pull-right" ng-click="completeSection()" href="/packtlib/book/web_development/9781783288472/1">Next Section</a></span>
+						<span class="visible-xs" ng-show="entitled == true"><a class="btn btn-primary btn-block btn-lg" ng-click="completeSection()" href="/packtlib/book/web_development/9781783288472/1">Next Section</a></span>
+						<span class="hidden-xs ng-hide" ng-show="entitled == false"><h4 class="pull-left ng-binding"><strong>Up Next: </strong> 1: Setting Up the Environment</h4><a class="btn btn-primary pull-right" href="/packtlib/book/web_development/9781783288472/1">Next Section</a></span>
+						<span class="visible-xs ng-hide" ng-show="entitled == false"><a class="btn btn-primary btn-block btn-lg" href="/packtlib/book/web_development/9781783288472/1">Next Section</a></span>
+				</div>
+				<div class="row ns">
+					<hr>
+				</div>
+			</div>
+			<div class="text-center col-sm-12 mb20 ng-scope">
+				<small class="ng-binding">ISBN 9781783288472 &copy; Packt Publishing Limited. All Rights Reserved </small>
+			</div>
+		</div>
+	</div>

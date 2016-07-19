@@ -1,247 +1,52 @@
-<html>
-<title>New PDP X3</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
-<!-- Latest compiled and minified CSS -->
+<!-- index.html -->
+<!DOCTYPE html>
+
+<!-- define angular app -->
+<html ng-app="document_guide">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta content="initial-scale=1.0, width=device-width" name="viewport">
+<!-- load bootstrap -->
 <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="assets/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="assets/css/ntloi.css">
-<link rel="stylesheet" type="text/css"  href="assets/css/responsive.css" />
 
-
-<!-- JS -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<!-- load Css Theme -->
+<link rel="stylesheet" href="assets/css/style.css" />
+<link rel="stylesheet" href="assets/css/ntloi.css" />
+<!-- load jquery -->
+<script src="assets/js/jquery-1.12.3.js"></script>
 <script src="assets/js/custom.js"></script>
+<script >
+var $jq =jQuery.noConflict();
+</script>
+<!-- load bootstrap -->
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<!-- load angular -->
+<script src="assets/js/angular.min.js"></script>
+<script src="assets/js/angular-route.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/lib/dirPagination.js"></script>
+</head>
 
-<body>
-<div id="pdpwrapper" class="pdp-wrapper">
-	<div class="">
-		<!-- Header  -->
-		<div class="header-sticky">
-			<div class="pdp-toplinks bkg-grey text-right">
-				<ul class="pdp-container">
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Live Chat</a></li>
-					<li><a href="#">Help Center</a></li>
-					<li><a href="#">Login</a></li>
-				</ul>
-			</div>
-			<div class="pdp-header">
-				<div class="pdp-container">
-					<div class="row">
-						<div class="col-lg-3 col-xs-7 hidden-sm hidden-md">
-							<a href="#" class="logo"><img src="assets/images/logo.svg" alt="logo" height="35px" /></a>
-						</div>
-						<div class="hidden-lg col-md-1 hidden-xs col-sm-1">
-							<a href="#" class="logo"><img src="assets/images/logo-m.svg" alt="logo" height="35px" /></a>
-						</div>
-						<div class="col-lg-9 col-xs-5 col-sm-11 col-md-11 text-right">
-							<ul class="header-nav hidden-xs">
-								<li><a href="#">Way to sell</a></li>
-								<li><a href="#">Feature</a></li>
-								<li><a href="#">Pricing</a></li>
-								<li><a href="#">Service</a></li>							
-							</ul>
-							<ul class="header-nav">
-								<li>
-									<a class="menu-sidebar-right">More +</a>
-									<div class="header-nav-sidebar">									
-										<div class="menu-sidebar-container right">
-											<div class="menu-sidebar-top">
-												<div id="close_sidebar_btn" class="close-sidebar-btn">
-													<span class="tri-close" id="tri_close">
-														<span></span>
-													</span>
-												</div>
-												<a href="#" class="pdp-btn2 pdp-btn-demo over"><span>Start my demo</span></a>
-											</div>										
-											<ul>
-												<li><a href="#">Way to sell</a></li>
-												<li><a href="#">Feature</a></li>
-												<li><a href="#">Pricing</a></li>
-												<li class="dropdown">
-													<a class="nav-list collapsed" role="button" data-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapse1">Service</a>
-													<ul class="header-nav-sub collapse" id="collapse1">
-														<li><a href="#">Service 1</a></li>
-														<li><a href="#">Service 2</a></li>
-														<li><a href="#">Service 3</a></li>
-														<li><a href="#">Service 4</a></li>							
-														<li><a href="#">Service 5</a></li>							
-													</ul>
-												
-												</li>
-												<li class="dropdown">
-													<a class="nav-list collapsed" role="button" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2">Tool</a>
-													<ul class="header-nav-sub collapse" id="collapse2">
-														<li><a href="#">Tool 1</a></li>
-														<li><a href="#">Tool 2</a></li>
-														<li><a href="#">Tool 3</a></li>
-														<li><a href="#">Tool 4</a></li>							
-													</ul>
-												</li>
-											</ul>
-										</div>							
-									</div>
-								</li>
-							</ul>
-							<a href="#" class="pdp-btn2 pdp-btn-demo hidden-xs"><span>Start my demo</span></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- End Header  -->
+<!-- define angular controller -->
+<body ng-controller="mainController" class="ng-scope document-page" >
+	<div id="pdpwrapper" class="pdp-wrapper">
 		
-		<!-- Main  -->
-		<div class="pdp-main help-item">
-			<section class="help-top">
-				<div class="container">	
-					<div class="pdp-container">						
-						<div class="pdp-search-wrapper">
-							<form method="GET" action="#" accept-charset="UTF-8">							  
-								<input required="required" placeholder='Example: "How do I create a campaign?"' class="search-terms form-control" name="q" id="q" type="text">
-								<button class="btn-search" type="submit"> </button>
-							</form>
+		<div class="page-header-topbar ng-scope" ng-include="'templates/navbar.html'"></div>
+		<div id="wrapper-doc" class="pdp-main">
+				
+				<div class="wrap-content">
+					<div class="sidebar-main sidebar ng-scope" ng-include="'templates/sidebar-main.html'"><!-- Sidebar Left --></div>
+					<div class="page-content" ng-generaltab="" ng-class="[header.animation]">						
+						<div class="box-content">
+							<div ng-view></div>
 						</div>
 					</div>
 					
 				</div>
-			</section>
-			<section class="help-container">
-				<div class="container">	
-					<div class="title-top">
-						<span class="icon icon2"><img src="assets/images/help2.png" alt="" /></span>
-						<h3 class="text">Contact Management</h3>
-					</div>
-				
-					<div class="help-items">
-						
-						<ul class="row">
-							<li class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-								<a href="#">
-									<span class="title">Create and Manage Contacts</span>
-									<span class="des"> Create and manage contact records in Infusionsoft </span>
-								</a>
-							</li>
-							<li class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-								<a href="#">
-									<span class="title">Import Contacts</span>
-									<span class="des"> Import contacts into your Infusionsoft system </span>
-								</a>	
-							</li>
-							<li class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-								<a href="#">
-									<span class="title">Merge Duplicate Contacts</span>
-									<span class="des"> Merge Duplicate Contacts</span>
-								</a>
-							</li>
-							<li class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-								<a href="#">
-									<span class="title">Search and Tag Contacts</span>
-									<span class="des"> Search and segment contacts in order to send targeted marketing messages </span>
-								</a>
-							</li>
-							<li class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-								<a href="#">
-									<span class="title">Create and Manage Companies</span>
-									<span class="des"> Create and manage company records in Infusionsoft  </span>
-								</a>
-							</li>							
-						</ul>
-					</div>
-				</div>
-			</section>
-		</div>
 
-		<!-- End Main  -->
-		
-		<!-- Footer  -->
-		<div class="pdp-footer">
-			<div class="pdp-footer-top">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-4 col-md-6 col-sm-6">
-							<a class="small-logo" href="#"><img src="assets/images/logo.svg" alt="logo" /></a>
-							<ul class="f-address">								
-								<li class="map-icon"><i class="fa fa-map" aria-hidden="true"></i>1260 South Spectrum Boulevard<br>Chandler, Arizona 85286</li>
-								<li class="phone-icon"><i class="fa fa-phone" aria-hidden="true"></i>Americas: <a href="tel:18668000004">+1 866 800 0004</a></li>
-								<li class="phone-icon"><i class="fa fa-phone" aria-hidden="true"></i>Americas (local): <a href="tel:14804996500">+1 480 499 6500</a></li>         
-							</ul>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6">						
-							<div class="top-row">
-								<div class="row">
-									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-										<div class="f-title">
-											<h5>Engage</h5>
-										</div>
-										<ul class="f-lists">
-											<li><a href="#">About</a></li>
-											<li><a href="#">Success Stories</a></li>
-											<li><a href="#">Become a Partner</a></li>
-											<li><a href="#">Find a Partner</a></li>
-										</ul>
-									</div>
-									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-										<div class="f-title">
-											<h5>Support</h5>
-										</div>
-										<ul class="f-lists">
-											<li><a href="#">Help Center</a></li>
-											<li><a href="#">Contact</a></li>
-											<li><a href="#">Reach us on Twitter!</a></li>
-											<li><a href="#">Known Issues</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<div class="bottom-row">
-								<div class="pdp-search-wrapper">
-									<form method="GET" action="#" accept-charset="UTF-8">							  
-										<input required="required" placeholder="Search terms" class="search-terms form-control" name="q" id="q" type="text">
-										<button class="btn-search" type="submit"> </button>
-									</form>
-								</div>
-							</div>       
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6 subcribe-block">
-							<div class="f-title">
-								<h5>Sign up for our mailing list</h5>							
-							</div>
-							<form action="#" method="post" class="subscribe-form">
-								<p>Email:</p>
-								<input type="email" name="email" class="subscribe-input form-control" placeholder="Email address">
-								<button type="submit" class="subscribe-submit pdp-btn">Sign Up</button>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="pdp-footer-bottom bkg-grey">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-6 col-md-6 col-sm-12">
-							<ul class="f-extra">
-								<li><a href="#">Privacy Policy</a></li>
-								<li><a href="#">Legal</a></li>
-							</ul>
-							<span class="copy-right">©2016 Infusionsoft. All Rights Reserved</span>
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-12 text-right">
-							<ul class="f-socials">
-								<li><a href="#" class="facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i>Facebook</a></li>
-								<li><a href="#" class="twitter"><i class="fa fa-twitter-square" aria-hidden="true"></i>Twitter</a></li>
-								<li><a href="#" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
-								<li><a href="#" class="linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i>linkedin</a></li>
-								<li><a href="#" class="youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i>youtube</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
 		</div>
-		<!-- End Footer  -->
 	</div>
-</div>
+
 </body>
 </html>
