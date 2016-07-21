@@ -33,17 +33,16 @@ var $jq =jQuery.noConflict();
 	<div id="pdpwrapper" class="pdp-wrapper">
 		
 		<div class="page-header-topbar ng-scope" ng-include="'templates/navbar.html'"></div>
-		<div id="wrapper-doc" class="pdp-main">
-				
-				<div class="wrap-content">
-					<div class="sidebar-main sidebar ng-scope" ng-include="'templates/sidebar-main.html'"><!-- Sidebar Left --></div>
-					<div class="page-content" ng-generaltab="" ng-class="[header.animation]">						
-						<div class="box-content">
-							<div ng-view></div>
-						</div>
+		<div id="wrapper-doc" class="pdp-main">				
+			<div class="wrap-content">
+				<div class="sidebar-main sidebar ng-scope" ng-include="'templates/sidebar-main.html'"><!-- Sidebar Left --></div>
+				<div class="page-content" ng-generaltab="" ng-class="[header.animation]">						
+					<div class="box-content">						
+						<div ng-view></div>						
 					</div>
-					
 				</div>
+				
+			</div>
 
 		</div>
 	</div>

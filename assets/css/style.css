@@ -1,6 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900&subset=latin,latin-ext,greek,greek-ext,vietnamese,cyrillic-ext,cyrillic);
 html, body{height:100%;}
 #pdpwrapper {
     height: 100%;
+}
+.document-page {
+	font-family: 'Roboto', sans-serif;
 }
 .document-page .pdp-btn{letter-spacing:0;}
 .navbar-brand.logo {
@@ -37,24 +41,10 @@ html, body{height:100%;}
 #modal_login .pdp-btn {
  width:100%;
 }
-.sidebar-main{
-	background: #f5f5f5 none repeat scroll 0 0;
-	bottom: 0;
-	box-shadow: -3px 1px 9px -4px #ababab inset;
-	/* left: 250px; */
-	margin-left: -250px;
-	overflow-x: hidden;
-	overflow-y: auto;
-	position: fixed;
-	top: 60px;
-	transition: all 0.5s ease 0s;
-	width: 0;
-	z-index: 1000;
-	width:250px;
-}
-#wrapper-doc{margin-left:250px; margin-top: 60px; min-height:100%;  padding:0; background:#f5f5f5; transition: all 0.5s ease 0s;}
+
+#wrapper-doc{margin-left:270px; margin-top: 60px; min-height:100%;  padding:0; background:#fff; transition: all 0.5s ease 0s;}
 #wrapper-doc.expand{margin-left:0px; ;}
-.page-content{ padding:30px 0;}
+.page-content{ padding:30px 0; font-size: 16px;     line-height: 25px;}
 .topbar-doc {
   background: #fff;
   box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.1);
@@ -75,3 +65,89 @@ html, body{height:100%;}
   line-height: 40px;
   font-size: 16px;
 }
+
+/*		Sidebar Main	*/
+.sidebar-main{
+	background: #f5f5f5 none repeat scroll 0 0;
+	border-right: 1px solid #ccc;
+	bottom: 0;
+	box-shadow: 2px 0 9px -2px #ababab;
+	margin-left: -270px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	position: fixed;
+	top: 62px;
+	transition: all 0.5s ease 0s;
+	width: 270px;
+	z-index: 1000;
+}
+.sidebar-main .pdc-search{padding:0 15px;}
+.sidebar-main .nav-tabs{
+	margin: 25px 0 30px;
+}
+.sidebar-main  .nav-tabs > li.active > a, .sidebar-main .nav-tabs > li.active > a:focus, .sidebar-main .nav-tabs > li.active > a:hover{
+	background:#f5f5f5;
+	color:#000;
+}
+.sidebar-main  .nav-tabs > li > a{
+	color:#999;
+}
+.sidebar-main  .nav-tabs > li:first-child{
+	margin-left:15px;
+}
+.sidebar-main  .panel-default{
+	border:none;
+	box-shadow: none;
+	background:#f5f5f5;
+	 border-radius: 0;
+}
+#wrapper-doc li a{
+	color: #888;
+	display: block;
+	font-size: 13px;
+	overflow: hidden;
+	padding: 10px 20px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+#wrapper-doc li li a{padding-left:35px;}
+#accordion_book li.active a, #accordion_book li a:hover,  #accordion_book li.active li a:hover{
+	background: #81c73d none repeat scroll 0 0;
+	color: #fff;
+}
+#accordion_book .panel-default .panel-heading{
+	background: none;
+	padding:0;
+}
+#accordion_book .panel-body{padding:0; border: medium none;}
+ #accordion_book li.active li a {
+	background: none;
+	color:#888;
+}
+/*		Book content	*/
+.reader-container h2.title {
+  font-size: 36px;
+  font-weight: 100;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.top-page .btn{
+	border-radius:0;
+}
+.top-page .btn-group{
+	float:right;
+	margin-left:-1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -20,10 +20,6 @@ var mst = jQuery.noConflict();
 		});
 	});
 	mst(document).ready(function () {
-		// For Document Page
-		mst('#menu-toggle').click(function () {
-			mst('#wrapper-doc').toggleClass('expand');
-		});
 		//right
 		mst('.menu-sidebar-right').click(function () {
 			if (mst('.menu-sidebar-container.right').css("right") == "-300px") {

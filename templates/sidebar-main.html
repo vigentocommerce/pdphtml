@@ -17,66 +17,89 @@
 			  </div>      
 			</div>
 		</form>
-		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-			<div class="panel panel-default">
+		<ul class="panel-group" id="accordion_book" role="tablist" aria-multiselectable="true">
+			<li class="panel panel-default" ng-class="{active : activeMenu === 'AngularJS UI Development'}">
 				<div class="panel-heading" role="tab">
-				  <h4 class="panel-title">
-					<a role="button" href="/content1">
-						AngularJS UI Development
-					</a>
-				  </h4>
+					<h4 class="panel-title">
+						<a role="button" href="#" ng-click="activeMenu = 'AngularJS UI Development'">
+							AngularJS UI Development
+						</a>
+					</h4>
 				</div>
-			</div>
-			<div class="panel panel-default">
+			</li>
+			<li class="panel panel-default" ng-class="{active : activeMenu === 'Preface'}">
 				<div class="panel-heading" role="tab">
-				  <h4 class="panel-title">
-					<a role="button">
-						Preface
-					</a>
-				  </h4>
+					<h4 class="panel-title">
+						<a  href="#collapse2" ng-click="activeMenu = 'Preface'">
+							Preface
+						</a>
+					</h4>
 				</div>
-			</div>
-			<div class="panel panel-default">
+			</li>
+			<li class="panel panel-default"  ng-class="{active : activeMenu === '1: Content 1'}">
 				<div class="panel-heading" role="tab" id="heading1">
-				  <h4 class="panel-title">
-					<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
-						 1: Content 1
-					</a>
-				  </h4>
+					<h4 class="panel-title">
+						<a role="button" data-toggle="collapse" data-parent="#accordion_book" href="#collapse1" aria-expanded="false" aria-controls="collapse1" ng-click="activeMenu = '1: Content 1'">
+							 1: Content 1
+						</a>
+					</h4>
 				</div>
 				<div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
 					<ul class="panel-body">
-						<li><a href="#">Hello World</a></li>	
-						<li><a href="#">Installing Node.js and NPM</a></li>	
-						<li><a href="#">Managing client-side dependencies with Bower</a></li>	
-						<li><a href="#">Testing the Hello World application</a></li>	
-						<li><a href="#">Building the application</a></li>	
-						<li><a href="#">Managing the source code with Git</a></li>	
+						<li ng-class="{active : activeMenu === 'Hello World'}">
+							<a href="#collapse2" ng-click="activeMenu = 'Hello World'">Hello World</a>
+						</li>	
+						<li ng-class="{active : activeMenu === 'Installing Node.js and NPM'}">
+							<a href="#collapse1" ng-click="activeMenu = 'Installing Node.js and NPM'">Installing Node.js and NPM</a>
+						</li>	
+						<li ng-class="{active : activeMenu === 'Managing client-side dependencies with Bower'}">
+							<a href="#collapse2" ng-click="activeMenu = 'Managing client-side dependencies with Bower'">Managing client-side dependencies with Bower</a>
+						</li>	
+						<li ng-class="{active : activeMenu === 'Testing the Hello World application'}">
+							<a href="#collapse1" ng-click="activeMenu = 'Testing the Hello World application'">Testing the Hello World application</a>
+						</li>	
+						<li ng-class="{active : activeMenu === 'Building the application'}">
+							<a href="#collapse2" ng-click="activeMenu = 'Building the application'">Building the application</a>
+						</li>	
+						<li ng-class="{active : activeMenu === 'Managing the source code with Git'}">
+							<a href="#collapse1" ng-click="activeMenu = 'Managing the source code with Git'">Managing the source code with Git</a>
+						</li>	
 					</ul>
 				</div>
-			</div>
-			<div class="panel panel-default">
+			</li>
+			<li class="panel panel-default" ng-class="{active : activeMenu === '2: Content 2'}">
 				<div class="panel-heading" role="tab" id="heading2">
-				  <h4 class="panel-title">
-					<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
-						 2: Content 2
-					</a>
-				  </h4>
+					<h4 class="panel-title">
+						<a role="button" data-toggle="collapse" data-parent="#accordion_book" href="#collapse2" aria-expanded="false" aria-controls="collapse2" ng-click="activeMenu = '2: Content 2'">
+							 2: Content 2
+						</a>
+					</h4>
 				</div>
 				<div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
 					<ul class="panel-body">
-						<li><a href="#">Downloading AngularUI</a></li>	
-						<li><a href="#">Building AngularUI-Utils</a></li>	
-						<li><a href="#">uiMask directive</a></li>	
-						<li><a href="#">Testing the Hello World application</a></li>	
-						<li><a href="#">Building the application</a></li>	
-						<li><a href="#">Managing the source code with Git</a></li>	
+						<li ng-class="{active : activeMenu === 'Downloading AngularUI'}">
+							<a href="#collapse1" ng-click="activeMenu = 'Downloading AngularUI'">Downloading AngularUI</a>
+						</li>	
+						<li ng-class="{active : activeMenu === 'Building AngularUI-Utils'}">
+							<a href="#collapse2" ng-click="activeMenu = 'Building AngularUI-Utils'">Building AngularUI-Utils</a>
+						</li>	
+						<li ng-class="{active : activeMenu === 'uiMask directive'}">
+							<a href="#collapse1" ng-click="activeMenu = 'uiMask directive'">uiMask directive</a>
+						</li>	
+						<li ng-class="{active : activeMenu === 'Testing the Hello World application'}">
+							<a href="#collapse2" ng-click="activeMenu = 'Testing the Hello World application'">Testing the Hello World application</a></li>	
+						<li ng-class="{active : activeMenu === 'Building the application'}">
+							<a href="#collapse1" ng-click="activeMenu = 'Building the application'">Building the application</a>
+						</li>	
+						<li ng-class="{active : activeMenu === 'Managing the source code with Git'}">
+							<a href="#collapse2" ng-click="activeMenu = 'Managing the source code with Git'">Managing the source code with Git</a>
+						</li>	
 					</ul>
 				</div>
-			</div>
+			</li>
 		  
 
-		</div>
+		</ul>
 		
 	</div>
     <div role="tabpanel" class="tab-pane" id="bookmark">
