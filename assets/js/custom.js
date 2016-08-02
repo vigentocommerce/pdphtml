@@ -45,7 +45,9 @@ var mst = jQuery.noConflict();
 			mst('.menu-sidebar-container.right').animate({right: '-300px'}, 150);
 			mst('.close-sidebar-btn').removeClass('sidebar-active');
 		}); 
-		 
+		/* Auto resize heading */
+		mst('.banner-content h1').fitText({ minFontSize: '20px', maxFontSize: '38px' });
+		mst('.banner-content h3').fitText({ minFontSize: '15px', maxFontSize: '18px' });
 	});
 
 
