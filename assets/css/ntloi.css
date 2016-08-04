@@ -305,7 +305,7 @@ video {
   line-height: 25px;
   margin-bottom: 20px;
 }
-/* .heading-content h1 span{display:block;} */
+.heading-content h1 span{display:block;}
 .printing-list {
   display: block;
   list-style: outside none none;
