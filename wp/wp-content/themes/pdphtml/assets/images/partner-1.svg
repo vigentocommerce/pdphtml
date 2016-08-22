@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="130px" height="162px" viewBox="0 0 130 162" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="v2" transform="translate(-392.000000, -1536.000000)" stroke-width="2">
+            <g id="content_mask" transform="translate(-1.000000, 0.000000)">
+                <g id="content">
+                    <g id="grid" transform="translate(189.000000, 1204.000000)">
+                        <g id="marketingAgency" transform="translate(0.000000, 274.000000)">
+                            <g id="maButton_default" transform="translate(1.549770, 0.769531)">
+                                <g id="Imported-Layers-+-Oval-1337-+-Line-+-Line-313" transform="translate(204.000000, 58.000000)">
+                                    <g id="Imported-Layers" transform="translate(0.277108, 24.314815)" stroke="#303442" fill="#C4E48B">
+                                        <path d="M73.6871325,60.239321 L73.6871325,0.0616975309 L0.971084337,45.6488889 L61.7672289,67.7116975 L73.6871325,60.239321" id="Fill-1"></path>
+                                        <path d="M61.7672289,67.7116975 L56.3329157,71.1182407 L75.3260723,78.0110494 L75.3260723,127.409722 L6.40539759,102.416173 L0.971084337,105.823981 L80.3381205,134.604969 L80.3381205,74.4513889 L61.7672289,67.7116975" id="Fill-2"></path>
+                                        <path d="M56.3329157,71.1182407 L0.971084337,50.9991358 L0.971084337,105.823981 L56.3329157,71.1182407 Z" id="Fill-3"></path>
+                                    </g>
+                                    <g id="Oval-1337-+-Line-+-Line-313" transform="translate(81.722892, 0.537037)" stroke="#535353" stroke-linecap="round" stroke-linejoin="round">
+                                        <ellipse id="Oval-1337" cx="22.5542169" cy="22.7777778" rx="22.5542169" ry="22.7777778"></ellipse>
+                                        <path d="M22.5542169,10.3535354 L22.5542169,35.2020202" id="Line"></path>
+                                        <path d="M10.1299744,22.7777778 L34.9784593,22.7777778" id="Line-313"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
