@@ -367,3 +367,33 @@ require get_template_directory() . '/inc/template-tags.php';
  * @since Twenty Fifteen 1.0
  */
 require get_template_directory() . '/inc/customizer.php';
+remove_filter( 'the_content', 'wpautop' );
+remove_filter( 'the_excerpt', 'wpautop' );
+/**
+add_filter( 'body_class', function( $classes ) {
+    return array_merge( $classes, array('bkg-grey' ) );
+} );
+
+
+add_filter('body_class','wpsites_specific_page_body_class');
+function wpsites_specific_page_body_class($classes) {
+    if(is_page(19) ) {
+        $classes[] = 'bkg-grey';
+    return $classes;
+    }
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+

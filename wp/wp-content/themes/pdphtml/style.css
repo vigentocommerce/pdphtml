@@ -1830,7 +1830,9 @@ video {
 .f-socials li {margin: 0 0 0 15px;}
 .f-socials li a {font-size:0;}
 .f-socials li a i {font-size:22px;}
-
+body.page-id-19{
+	 background: #eee none repeat scroll 0 0;
+}
 
 
 
