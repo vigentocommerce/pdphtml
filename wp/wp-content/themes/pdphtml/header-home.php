@@ -52,10 +52,14 @@
 					</div>
 					<div class="col-lg-9 col-xs-5 col-sm-11 col-md-11 text-right">
 						<ul class="header-nav hidden-xs">
+							<!--
 							<li><a href="#">Ways to sell</a></li>
 							<li><a href="#">Features</a></li>
 							<li><a href="#">Pricing</a></li>
-							<li><a href="#">Shop Resources</a></li>							
+							<li><a href="#">Shop Resources</a></li>	
+							-->		
+							<?php wp_nav_menu( array( 'menu' => 'Menu Top' ) ); ?>
+
 						</ul>
 						<ul class="header-nav">
 							<li>
@@ -69,8 +73,9 @@
 												</span>
 											</div>
 											<a href="#" class="pdp-btn2 pdp-btn-demo over"><span>Start my demo</span></a>
-										</div>										
-										<ul>
+										</div>	
+										<?php wp_nav_menu( array( 'menu' => 'Menu Right', 'container_class' => 'menu_right' ) ); ?>									
+										<!--ul>
 											<li><a href="#">Way to sell</a></li>
 											<li><a href="#">Feature</a></li>
 											<li><a href="#">Pricing</a></li>
@@ -94,7 +99,7 @@
 													<li><a href="#">Tool 4</a></li>							
 												</ul>
 											</li>
-										</ul>
+										</ul-->
 									</div>							
 								</div>
 							</li>

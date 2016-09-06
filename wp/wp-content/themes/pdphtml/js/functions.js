@@ -20,6 +20,7 @@
 		container.find( '.current-menu-ancestor > .sub-menu' ).addClass( 'toggled-on' );
 
 		container.find( '.dropdown-toggle' ).click( function( e ) {
+		
 			var _this = $( this );
 			e.preventDefault();
 			_this.toggleClass( 'toggle-on' );
@@ -29,7 +30,24 @@
 		} );
 	}
 	initMainNavigation( $( '.main-navigation' ) );
-
+   // initMainNavigation( $( '.menu-sidebar-container' ) );
+   //CaNT customize MainNavigation
+   function caInitMainNavigation ( container) {
+    container.find('.menu-item-has-children > a').addClass('nav-list collapsed');
+   	container.find( '.menu-item-has-children > a' ).attr("aria-expanded","true");
+    container.find( '.menu-item-has-children > a' ).attr("data-toggle","collapse");
+   
+    container.find( '.menu-item-has-children > .sub-menu' ).attr("aria-expanded","true");
+    container.find( '.menu-item-has-children > .sub-menu' ).addClass("header-nav-sub collapse");
+    
+    container.find('.nav-list').click( function( e ){
+        var _this = $ ( this );
+        e.preventDefault();
+        _this.toggleClass('collapsed');
+        _this.next('.sub-menu').toggleClass('in');
+    }) 
+   }
+   caInitMainNavigation($('.menu-sidebar-container'));
 	// Re-initialize the main navigation when it is updated, persisting any existing submenu expanded states.
 	$( document ).on( 'customize-preview-menu-refreshed', function( e, params ) {
 		if ( 'primary' === params.wpNavMenuArgs.theme_location ) {

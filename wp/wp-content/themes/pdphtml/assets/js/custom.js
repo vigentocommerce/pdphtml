@@ -19,7 +19,7 @@ var mst = jQuery.noConflict();
 			}
 		});
 	});
-	mst(document).ready(function () {
+	mst(document).ready(function () {		
 		//right
 		mst('.menu-sidebar-right').click(function () {
 			if (mst('.menu-sidebar-container.right').css("right") == "-300px") {
@@ -48,7 +48,28 @@ var mst = jQuery.noConflict();
 		/* Auto resize heading */
 		mst('.banner-content h1').fitText({ minFontSize: '20px', maxFontSize: '38px' });
 		mst('.banner-content h3').fitText({ minFontSize: '15px', maxFontSize: '18px' });
+		/* Add active class */
+		mst('.nodisplay').css("display","none");
+		//Click event of sub-tab
+		mst('.panel-title a').click(function(){
+			mst('li.panel').removeClass('active');
+			mst(this).parents("li.panel").addClass('active');
+			var title = mst(this).parent("h4.panel-title").find("h1").html();
+			var content = mst(this).parent("h4.panel-title").find(".content").html();
+			mst(this).parents(".wrap-content").find(".book-content h2").addClass('title').html(title);
+			mst(this).parents(".wrap-content").find(".book-content p").html(content);
+		});
+		//Load default default
+		mst('.tab-content').find('#content').addClass('active');
+		mst('.nav.nav-tabs li a').click(function(){
+			//remove class active of all tab-content 
+			mst(this).parents('.sidebar-content').find('#accordion_book li').removeClass('active');
+			mst('#page-content-wrapper .titlepage h2').removeClass('title').text("");
+			mst('#page-content-wrapper .book-content p').text("");
+		})
+
 	});
+
 
 
 	
